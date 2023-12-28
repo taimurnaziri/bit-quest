@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Silkscreen&display=swap" rel="stylesheet">
     <title>BitQuest</title>
 </head>
 <style>
+    body{
+        font-family: 'Courier Prime', monospace;
+        font-family: 'Silkscreen', sans-serif;
+    }
+    header{
+        text-align: center;
+    }
     section{
         display: flex;
+        flex-flow: column;
     }
-    div{
-        padding: 1em;
-    }
-    form{
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column nowrap;
+    .dev-env form input{
         width: 100%;
-    }
-    input{
-        margin-bottom: 1em;
-        width: 500px;
         height: 200px;
-    }
-    button{
-        padding: 1em;
-        flex-grow: 1;
     }
 </style>
 <body>
-    <h1>BitQuest</h1>
-    <h2>Test Your Knowledge</h2>
+    <header>
+        <h1>BitQuest</h1>
+        <h2>Test Your Knowledge</h2>
+    </header>
     <section>
         <div>
-            <h3>Question #1</h3>
+            <h3>Challenge 1.0</h3>
             <p>Write an array and print the items in alphabetical order.</p>
         </div>
-        <div>
+        <div class="dev-env">
             <form>
                 <input type="text" placeholder="Enter Your Code Here">
                 <button>Clear</button>
